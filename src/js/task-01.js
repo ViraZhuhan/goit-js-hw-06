@@ -10,15 +10,13 @@ console.log(`Elements: ${animalsItem.length}`);
 console.log('');
 
 console.log(`Category: ${allTitles[1].textContent}`);
-const productsItem = document.querySelectorAll('.products__item');
-console.log(`Elements: ${productsItem.length}`);
+const productsItem = document.querySelector('.products');
+console.log(`Elements: ${productsItem.children.length}`);
 console.log('');
 
 console.log(`Category: ${allTitles[2].textContent}`);
-const technologiesItem = document.querySelectorAll('.technologies__item');
-console.log(`Elements: ${technologiesItem.length}`);
-console.log('');
-
+const technologiesItem = document.querySelector('.technologies');
+console.log(`Elements: ${technologiesItem.children.length}`);
 
 
 
