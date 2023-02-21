@@ -1,0 +1,20 @@
+li {
+    list-style-type: none;
+}
+
+image {
+display: block;
+height: 100%;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
