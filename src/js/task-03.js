@@ -19,6 +19,7 @@ const items = images.map((element) => {
   const itemsEl = document.createElement("li");
 
   const imageEl = document.createElement("img");
+  imageEl.classList = "galery__img";
   imageEl.src = element.url;
   imageEl.alt = element.alt;
   imageEl.width = 250;
