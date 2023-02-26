@@ -15,21 +15,24 @@ const images = [
 
 const listEl = document.querySelector(".gallery");
 
-const items = images.map((element) => {
-  const itemsEl = document.createElement("li");
+const makeImagesGallery = (options) => {
+  return options.map((option) => {
+    const itemsEl = document.createElement("li");
 
-  const imageEl = document.createElement("img");
-  imageEl.classList = "galery__img";
-  imageEl.src = element.url;
-  imageEl.alt = element.alt;
-  imageEl.width = 250;
+    const imageEl = document.createElement("img");
+    imageEl.classList = "galery__img";
+    imageEl.src = option.url;
+    imageEl.alt = option.alt;
+    imageEl.width = 250;
 
-  itemsEl.append(imageEl);
+    itemsEl.append(imageEl);
 
-  return itemsEl;
-});
+    return itemsEl;
+  });
+};
 
-listEl.append(...items);
+const elements = makeImagesGallery(images);
+listEl.append(...elements);
 
 listEl.insertAdjacentHTML(
   "beforebegin",
