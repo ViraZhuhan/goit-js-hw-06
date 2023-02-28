@@ -7,3 +7,9 @@ validationEl.addEventListener("blur", () => {
   ? validationEl.style.borderColor = 'rgb(76, 175, 80)' 
   : validationEl.style.borderColor = '#f44336'
 });
+
+
+
+
+
+
